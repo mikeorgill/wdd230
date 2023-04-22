@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(46, 46, 46);
+    line-height: 2rem;
+    font-size: 22px;
+    padding: 3rem;
+  }
+
+header, nav, main, footer {
+  background-color: azure;
+  margin: 4rem auto;
+  max-width: 875px;
+}
+
+main{
+  text-align: left;
+  padding: 1.25rem;
+
+}
+
+header, footer {
+  
+  background-color: blue;
+  color: azure;
+  text-align: center;
+  padding: 1.75rem;  
+}
+
+img {
+  max-width: 5.5rem;
+  float: left;
+  margin: auto;
+  border-radius: 10px;
+  
+}
+
+
+
+
