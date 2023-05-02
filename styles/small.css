@@ -27,7 +27,7 @@ header, footer {
   display: grid;
   grid-template-columns: 1fr;
   font-family: 'Manrope', sans-serif;
-  background-color: orange;
+  background-color: blue;
   color: azure;
   text-align: center;
   border-radius: 10px;  
@@ -49,6 +49,7 @@ h5 {
   text-align: center;
   background-color: blue;
   color: white;
+  
 }
 .column{
   grid-column: auto;
@@ -101,5 +102,17 @@ h2.main {
   grid-row: 1;
 }
 
+h6{
+  font-size: large;
+  text-decoration-line: underline;  
+  margin-top: -1rem;
+  margin-bottom: .2rem;
+}
 
+p{
+  
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -.7rem;
+}
 
