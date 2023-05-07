@@ -1,0 +1,39 @@
+@media only screen and (min-width: 900px) 
+{
+    header, nav, main, footer {
+        display: flex;
+        justify-content: center;
+        font-family: 'PT Sans', sans-serif;
+        margin: 1rem auto;
+        max-width: 1200px;
+        font-size: 25px;
+        line-height:10px;
+    }
+      
+    main{
+        border-radius: 10px;
+        background-color:#FFFFFF;
+        padding: 15px;
+    }
+      
+    header, footer { 
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        
+        font-family: 'Manrope', sans-serif;
+        background-color: #118AFF;
+        color: azure;
+        text-align: center;
+        /* line-height: 15px; */
+        border-radius: 10px; 
+    } 
+
+    nav{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    nav a{
+        padding: 25px;
+    }
+}
