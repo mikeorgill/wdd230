@@ -15,33 +15,59 @@
         padding: 15px;
     }
       
+    header nav{
+        order: 1;
+
+
+    }
     header, footer { 
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: space-around;
         font-family: 'Manrope', sans-serif;
         background-color: #118AFF;
         color: azure;
         text-align: center;
-        /* line-height: 15px; */
         border-radius: 10px;  
     }
 
     .header-logo{
-        max-width: 25rem;
+        max-width: 65%;
     }
-    .chamber{
-        display: none;
-    }
+    
+    section {
+        border-radius: 10px;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        text-align: center;
+      }
+      
+      section div {
+        margin: 10px;
+      }
+      
+     
+
     nav{
         flex-direction: row;
         justify-content: space-around;
+        align-items: flex-end;
+               
     }
 
-    nav a{
-        padding: 25px;
+    nav button {display: none;} 
+
+    nav ul#primaryNav {
+        display: flex;
+        border-left: 1px solid rgba(0,0,0,0.3);
     }
- }
+    
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+}
       
     

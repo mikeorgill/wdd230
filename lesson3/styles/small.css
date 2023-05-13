@@ -1,5 +1,4 @@
 body {
-    
     background-color: #99CDFF ;
     line-height: 2rem;
     /* font-size: large; */
@@ -8,6 +7,7 @@ body {
 
 header, nav, main, footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   font-family: 'PT Sans', sans-serif;
   margin: 1rem auto;
@@ -33,6 +33,11 @@ header, footer {
   border-radius: 10px;  
   
 }
+
+.header-logo{
+  padding: 3%;
+  min-width: 8rem;
+}
 nav{
   flex-direction: column;
   justify-content: space-evenly;
@@ -41,10 +46,6 @@ nav{
 nav a:hover{
    background-color: #FFFFFF;
 
-}
-
-.site-logo{
-  max-width: 50%;
 }
 
 .paragraphHeader{
