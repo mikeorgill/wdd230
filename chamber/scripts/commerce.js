@@ -31,7 +31,7 @@ x.onclick = toggleMenu;
 
 
 async function getWeatherApi(query) {
-    const response = await fetch('http://api.weatherapi.com/v1/forecast.json?key=06a0498a5dbd4bbb96030733231202&q=Murray UT&days=1&aqi=no&alerts=no');
+    const response = await fetch('https://api.weatherapi.com/v1/forecast.json?key=06a0498a5dbd4bbb96030733231202&q=Murray UT&days=1&aqi=no&alerts=no');
    
     const data = await response.json();
     console.log(data);
