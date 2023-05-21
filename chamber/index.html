@@ -6,47 +6,48 @@
     <meta name="description" content=" ">
     
     <title>Chamber of Commerce</title>
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=PT+Sans&family=Urbanist&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="/chamber/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
    
 </head>
-<body>
-    <header>
-        <img class="header-logo" src="images/murray-logo.png" alt="Murry City Commerce">
-        
-        <nav>
-            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-            <ul id="primaryNav">
-                <li><a href="#">Home</a></li> 
-                <li><a href="#">Page 1</a></li>
-                <li><a href="#">Page 2</a></li>
-                <li><a href="#">Page 3</a></li>
-                <li><a href="#">Page 4</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+    <body>
+        <div id="banner-top">Come to this weeks meeting Wednesday night 7:00 PM</div>
+        <header>
+            <div class="header-container">
+                <img class="header-logo" src="images/murray-logo.png" alt="Murry City Commerce">
+                <div id="weather"></div>
+                <nav>
+                    <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                    <ul id="primaryNav">
+                        <li><a href="#">Home</a></li> 
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                        <li><a href="#">Page 4</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+            <main>
+            <section>
+                <div class="section-1">Section1</div>
+                <div class="section-2">Section2</div>
+                <div class="section-3">Section3</div>
+                <div class="section-4">Secton4</div>
+            </section>       
+        </main>
+        <footer> 
+            <h2>&copy;<span id='year'></span> | Mike Orgill | <span id='currentdate'></span></h2>
+            <h2>Last updated: <span id='updatedLast'></span></h2>
+        </footer>
+        <script src="scripts/commerce.js"></script>
 
-    <main>
-        <section>
-            <div class="divHello">hello</div>
-            <div class="divJoin">Join </div>
-            <div class="divFix">fix </div>
-            <div class="divJump">jump</div>
-        </section>            
-            
-    </main>
-    <footer>
-        <h2>&copy;<span id='year'></span> | Mike Orgill | <span id='currentdate'></span></h2>
-        <h2>Last updated: <span id='updatedLast'></span></h2>
-    </footer>
-    <script src="scripts/commerce.js"></script>
-</body>
+    </body>
 </html>

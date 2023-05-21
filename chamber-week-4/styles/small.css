@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: row;
 } */
-header, nav, main, footer, div.banner-top {
+header, nav, main footer {
   display: flex;
   justify-content: center;
   font-family: 'PT Sans', sans-serif;
@@ -56,7 +56,7 @@ div.section-1, div.section-2, div.section-3, div.section-4{
   
   
 }
-/* div.section-1 {
+div.section-1 {
   
   
 }
@@ -71,7 +71,7 @@ div.section-3{
 
 div.section-4{
   
-} */
+}
 .paragraphHeader{
   text-align: left;
   text-decoration: underline;
@@ -142,16 +142,3 @@ nav ul.open {display: block;
 
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
-
-#banner-top{
-    /* display: none; */
-    background-color: rgba(243, 60, 15, 0.923);
-    padding: 5px;
-    /* margin: 15px auto; */
-    text-align: center;
-}
-
-weather{
-    padding: 5px;
-    margin: 3px auto;
-}
