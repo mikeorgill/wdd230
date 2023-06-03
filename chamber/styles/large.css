@@ -31,7 +31,7 @@
 
     div.section-1, div.section-2, div.section-3, div.section-4{
         margin: 5px auto;
-        background-color: #99CDFF;
+        /* background-color: #99CDFF; */
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -55,4 +55,6 @@
     nav ul li a {
         padding: .5rem 1rem;
     }
+
+    
 }

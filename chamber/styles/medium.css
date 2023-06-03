@@ -6,7 +6,7 @@
         /* font-family: 'PT Sans', sans-serif; */
         margin: 15px auto;
         max-width: 850px;
-        font-size: 15px;
+        font-size: 5px;
     }
       
 
@@ -33,13 +33,13 @@
     }
 
     .header-logo{
-        align-content: flex-end;
-       max-width: 75%;
+       max-width: 20%;
+
     }
     
     div.section-1, div.section-2, div.section-3, div.section-4{
         margin:5px auto;
-        background-color: #99CDFF;
+        /* background-color: #99CDFF; */
         /* justify-content: center; */
         /* align-items: center; */
         /* text-align: center; */

@@ -41,7 +41,11 @@ async function getWeatherApi(query) {
     resultsWeather.append(' City |');
     //var temp = document.createElement("li");
     var temp = " Temperature outside: " + data.current.temp_f;
+    var wind = " | Wind Speed: " +data.current.wind_mph;
+    var windChill = " | Wind Chill: ";// + Math.pow(35.74 + .6215(temp);// - 35.75(wind)^.16 + .4275(temp*wind)^.16);
     resultsWeather.append(temp);
+    resultsWeather.append(wind);
+    resultsWeather.append(windChill);
     //return data.location;
     //.then((response) => response.json())
     //.then((data) => console.log(data));
