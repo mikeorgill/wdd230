@@ -1,0 +1,57 @@
+
+body{
+    margin: auto;
+    margin: 5rem;
+    background-color: black;
+}
+header, main, footer {
+  margin: 1rem;
+  position: relative;
+  border-radius: 1rem;
+}
+
+h1 {
+  color: white;  
+}
+
+h2{
+    color: blue;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1r 1r;
+    margin-left: 1rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+header, footer{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* margin: 2rem; */
+    /* padding: 2rem; */
+    border-color: rgb(255, 0, 0, .03);
+    
+    
+}
+section{
+    background-color: white;
+    border-radius: 1rem;
+    border-color: black;
+    border-width: 1rem;
+    margin: .5rem;
+    padding: 1rem;
+    text-align: center;
+    
+}

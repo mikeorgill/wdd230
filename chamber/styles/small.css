@@ -18,14 +18,16 @@ header, nav, main, footer, div.banner-top {
 }
 
 main{
+  display: flex;
   border-radius: 10px;
   background-color:#FFFFFF;
   padding: 15px;
-  margin: 5px;
+  column-width: 200px;
+  /* margin: 5px; */
 }
 
 header, footer { 
-  display: flex;
+  display: block;
   flex-direction: column;
   padding: 5px;
   font-family: 'Manrope', sans-serif;
@@ -40,14 +42,14 @@ header, footer {
 footer{
   font-size: 10px;
 }
-section {
+/* section {
   border-radius: 10px;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
   text-align: center;
   padding: 15px;
-}
+} */
 
 div.section-1, div.section-2, div.section-3, div.section-4{
   margin:5px auto;
@@ -56,12 +58,21 @@ div.section-1, div.section-2, div.section-3, div.section-4{
   
   
 }
-div.section-1, div.section-2{
-  justify-content: space-evenly;
+
+.section-1, .section-2{
+  /* justify-content: space-evenly; */
+  Max-width: 340px;
 }
 
 .section1-image{
-  max-width: 35%;
+  max-width: 350px;
+  min-width: 100px;
+  margin: 3rem;
+  
+}
+
+p{
+  font-size: 20px;
 }
 /* div.section-1 {
   
@@ -158,6 +169,7 @@ nav ul.open {display: block;
     /* margin: 15px auto; */
     text-align: center;
 }
+
 
 weather{
     padding: 5px;
