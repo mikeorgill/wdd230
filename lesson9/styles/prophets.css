@@ -2,7 +2,7 @@
 body{
     margin: auto;
     margin: 5rem;
-    background-color: black;
+    background-color: rgb(161, 161, 161);
 }
 header, main, footer {
   margin: 1rem;
@@ -21,7 +21,6 @@ h2{
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     margin-left: 1rem;
 }
 
