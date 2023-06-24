@@ -22,12 +22,11 @@
         <header>
             <div class="header-container">
                 <img class="header-logo" src="images/murray-logo.png" alt="Murry City Commerce">
-                <div class="weather-container" id="weather"></div>
                 <nav>
                     <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                     <ul id="primaryNav">
-                        <li><a href="#">Home</a></li> 
-                        <li><a href="#">Page 2</a></li>
+                        <li><a href='index.html'>Home</a></li> 
+                        <li><a href='page2.html'>page2</a></li>
                         <li><a href="#">Page 3</a></li>
                         <li><a href="#">Page 4</a></li>
                     </ul>
@@ -35,14 +34,26 @@
             </div>
         </header>
             <main>
-                <img class="hero-image" src="images/wdd230-org.jpg" alt="Hero-image"
-                srcset="images/wdd230-small200px.jpg 1x, images/wdd230-meduim400px.jpg 2x, images/wdd230-large650px.jpg 3x">
+                <img class="hero-image" src="images\sunset-over-saltlakecity.jpg" alt="Hero-image">
+                <!-- srcset="images/wdd230-small200px.jpg 1x, images/wdd230-meduim400px.jpg 2x, images/wdd230-large650px.jpg 3x"> -->
             <section>
                 <div class="section-1">Section1</div>
                 <div class="section-2">Section2</div>
                 <div class="section-3">Section3</div>
                 <div class="section-4">Secton4</div>
-            </section>       
+            </section> 
+            <div class="weather-container">
+                <h8>OpenWeatherMap.org API Test</h8> 
+                <div class="weatherSection">
+                  <h8>The current temperature in </br>Murray, Utah</br><span id="current-temp"></span> &deg;F</h8>
+                  </br>
+                  <h8>Current Condition Icon</h8>
+                  <figure>
+                    <img src="" alt="" id="weather-icon">
+                    <figcaption></figcaption>
+                  </figure>
+                </div>
+          </div>      
         </main>
         <footer> 
             <h2>&copy;<span id='year'></span> | Mike Orgill | <span id='currentdate'></span></h2>

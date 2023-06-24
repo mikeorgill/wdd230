@@ -30,27 +30,38 @@ const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
 
 
-async function getWeatherApi(query) {
-    const response = await fetch('https://api.weatherapi.com/v1/forecast.json?key=06a0498a5dbd4bbb96030733231202&q=Murray UT&days=1&aqi=no&alerts=no');
-   
-    const data = await response.json();
-    console.log(data);
-    var resultsWeather = document.querySelector("#weather");
-    var city = data.location.name;
-    resultsWeather.append(city);
-    resultsWeather.append(' City |');
-    //var temp = document.createElement("li");
-    var temp = " Temperature outside: " + data.current.temp_f;
-    var wind = " | Wind Speed: " +data.current.wind_mph;
-    var windChill = " | Wind Chill: ";// + Math.pow(35.74 + .6215(temp);// - 35.75(wind)^.16 + .4275(temp*wind)^.16);
-    resultsWeather.append(temp);
-    resultsWeather.append(wind);
-    resultsWeather.append(windChill);
-    //return data.location;
-    //.then((response) => response.json())
-    //.then((data) => console.log(data));
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+
+const url =  'https://api.openweathermap.org/data/2.5/weather?q=Murray&units=imperial&appid=bc647adc084dd4a097a027935b756514';
+
+async function apiFetch() {
+    try {
+        const respone = await fetch(url);
+        if (respone.ok) {
+            const data = await respone.json();
+            console.log(data); //this is for testing the call
+            displayResults(data);
+            
+        } else {
+            throw Error(await respone.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }  
 }
 
-getWeatherApi();
+function  displayResults(weatherData) {
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(1)}</strong>`;
+    
+    const weatherImage = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const iconDescription = weatherData.weather[0].description;
+    weatherIcon.setAttribute('src', weatherImage);
+    weatherIcon.setAttribute('alt', iconDescription);
+    captionDesc.textContent = iconDescription;
+}
+
+apiFetch();
 
 
