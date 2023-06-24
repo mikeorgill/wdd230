@@ -1,32 +1,39 @@
 body {
-    display: flex;
-    background-color: lightcyan;
-    margin: 0 auto;   
+    background-color: rgb(128, 156, 156);
 }
 
 main{
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
+    margin-top: 100px;
+
 }
 
 .container{
     display: flex;
-    background-color: darkgray;
-    border-color: black;
-    border: 1rem solid;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 1rem;
     margin: 0 auto;
-
+    padding: 5px;
 }
 
+.topSection, .middleSection, .bottomSection{
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 5px;
+    min-width: 90%;
+    background-color:rgb(0, 252, 230);
+    margin: 7px;
+     
+}
 .topSection{
-    align-items: center;
+    font-size: 12px;
+}
+.bottomSection{
+    font-size: 12px;
 }
 
-.middleSeciton{
-    align-items: center;
-}
-
-.bottomSeciton{
-    align-items: center;
-}
 
