@@ -21,7 +21,7 @@
         width: 100%;
         
     }
-      
+    
     header, footer { 
         font-family: 'Manrope', sans-serif;
         color: azure;
@@ -121,6 +121,18 @@
         grid-column: 2;
         grid-row: 3;
         border: white 6px solid;
+    }
+
+    /*--------Directory-----*/
+    #directory-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 90%;
+    }
+    .directory-img{
+        max-width: 95%;
+        border: black 1px solid;
+        row-gap: 4em;
     }
 
 }

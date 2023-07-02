@@ -1,28 +1,20 @@
 @media only screen and (min-width: 640px) 
 {
-    header, main, nav, footer {
+    header, nav, footer {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         /* font-family: 'PT Sans', sans-serif; */
         margin: 15px auto;
         max-width: 850px;
-       
     }
-      
-    /* #main-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        background-color: #2196F3;
-        row-gap: 1em;
-      } */
     
     #main-container{        
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 1em;
         column-gap: 1em;
-        
+         
        }
     .hero-image{
         grid-column: 1/2;
