@@ -3,55 +3,57 @@ body {
     line-height: 2rem;
     min-width: 200px;
     padding: .5rem; 
+    display: block;
+    
   }
 /* .container{
   display: flex;
   flex-direction: row;
 } */
-header, nav, main, footer, div.banner-top {
+header, nav, main, footer {
   display: flex;
   justify-content: center;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Manrope', sans-serif;
   margin: 1rem auto;
-  max-width: 850px;
+  width: 90%; 
+  min-width: 250px;
+  max-width: 450%;
   padding: 5px;
+  
 }
-
+header, main, footer, div.banner-top{
+  box-shadow: 2px 5px 12px 0 rgba(0, 0, 0, 0.9);
+}
 main{
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: row;
   border-radius: 10px;
   background-color:#FFFFFF;
   column-width: 200px;
   
 }
 
+
 header, footer { 
-  display: block;
   flex-direction: column;
-  padding: 5px;
   font-family: 'Manrope', sans-serif;
-  background-color: #118AFF;
   color: black;
   text-align: center;
-  /* line-height: 15px; */
+  line-height: 15px;
   border-radius: 10px; 
+  
   
 }
 
+
 footer{
   font-size: 10px;
+  background-color: #118AFF;
+  
 }
-/* section {
-  border-radius: 10px;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  text-align: center;
-  padding: 15px;
-} */
+
 .hero-image{
-  max-width:50%;
+  max-width:95%;
   /* padding: 10px; */
   margin: 1rem;
   border-radius: 1.5rem;
@@ -67,6 +69,7 @@ div.section-1, div.section-2, div.section-3, div.section-4{
 .section-1, .section-2{
   /* justify-content: space-evenly; */
   Max-width: 340px;
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.5);
 }
 
 .section1-image{
@@ -74,36 +77,25 @@ div.section-1, div.section-2, div.section-3, div.section-4{
   min-width: 100px;
   margin: 3rem;
   border-radius: 1rem;
-  
+  box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 25); 
 }
 
 p{
   font-size: 20px;
 }
-/* div.section-1 {
-  
-  
-}
 
-div.section-2{
- 
-}
-
-div.section-3{
- 
-}
-
-div.section-4{
-  
-} */
 .paragraphHeader{
   text-align: left;
   text-decoration: underline;
 
 }
 .header-logo{
-  padding: 2%;
-  max-width: 85%;
+  width: 75%;
+  justify-content: center;
+  font-family: 'Manrope', sans-serif;
+  margin: 1rem auto;
+  max-width: 650px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 25);
 
 }
 nav{
@@ -127,6 +119,8 @@ nav button {
 
 nav {
   background-color: #eee;
+  border-radius: .5rem;
+  width: 3rem;
 }
 
 nav ul {
@@ -176,32 +170,233 @@ nav ul.open {display: block;
     text-align: center;
 }
 
-
+/*--------Weather--------*/
 .weather-container{
   display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-  background-color: White;
-  border-radius: 1rem;
-  border:#333 1px solid;
-  margin: 0 auto;
-  padding: 5px;
-  max-width: 15rem;
-  font-size: small;
-  justify-content: flex-end;
+  max-width: 95%;
 }
-
-.weatherSection{
+.weather-content{
+  max-width: 1fr;
+  max-height: 1fr;
   align-items: center;
   text-align: center;
   font-weight: bold;
   border-radius: 1rem;
-  padding: 5px;
-  background-color:#118AFF;
   color: black;
+  padding: 5px;
+
    
 }
-
-.wind-factor{
-  border-top: #333 1px solid;
+#current-temp{
+  margin-left: 5rem;
+  margin-bottom: 2rem;
 }
+.w-icon figcaption{
+  margin-top: -3rem;
+}
+.w-icon{
+  margin-top: -2rem;
+  margin-right:2rem;
+  font-size: 1rem;
+}
+.w-icon img{
+  width: 80%;
+
+}
+.wind-factor{
+  text-align: left;
+  line-height: 4px;
+  border-top: black 1px solid;
+}
+
+.weather-by{
+  text-align: center;
+  margin: 1rem;
+}
+
+/*-----Main page Spotlight-----*/
+.spotlight-container{
+  width: 40vh;
+  background-color: black;
+}
+
+
+
+
+/* -------Join Page-------- */
+
+.join-form h2 {
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Manrope', sans-serif;
+}
+label.top {
+  display: block;
+  padding-top: 1.15rem;
+  font-family: 'Manrope', sans-serif;
+  color: black;
+  font-weight: bolder;
+}
+
+form label.sbs {
+  display: block;
+  font-size: 2rem;
+  padding: 1.5rem;
+  color: Blue;
+  font-weight: bolder;
+  
+}
+
+.sbs-label{
+  border: black solid 2px;
+  margin-bottom: 3rem;
+  background-color: white;
+}
+legend {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: bolder;
+  padding: 5px;
+  background-color: blue;
+  border-radius: 1rem;
+  color: white
+}
+fieldset.membership-option{
+  align-items: center;
+  width: 90%;
+}
+form fieldset {
+  max-width: 90%;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  margin: 3rem auto;
+  padding: 2rem;
+  border: black 2px solid;
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.5), 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+}
+form label.top input, textarea {
+  display: block;
+  width: 100%;
+  max-width: 96%;
+  padding: .50rem 0;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+form input.submitBtn {
+  width: 90%;
+  max-width: 15rem;
+  padding: 1rem;
+  background-color: blueviolet;
+  color: white;
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.5), 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 5%;
+}
+form input.submitBtn:hover {
+  background-color: blue;
+}
+#grow-business{
+  margin: 0 5rem auto;
+  text-indent: 1.5em;
+  padding: 6px;
+
+}
+#membership-ben {
+  text-align: center;
+  
+}
+#membership-free{
+  margin-left: 5rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+/*--------Table---------*/
+table{
+  margin: 0 3rem auto;
+  width: 85%;
+  border-collapse: collapse;
+  font-family: 'Manrope', sans-serif;
+  border: 2px solid Black;
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.5), 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.heading{
+  border-bottom: 1px solid Black;
+  width: 7rem;
+}
+tfoot{
+  background-color: blue;
+  color: white;
+  border-top: 1px solid black;
+  
+}
+td{
+  border-left: 1px solid black;
+  text-align: center;
+}
+th{
+  background-color: blue;
+  color: white;
+  border: 1px black;
+  border-style: solid solid none solid;
+  padding: 1ch;
+}
+tr:nth-child(even) td{
+  background-color:  lightgray;
+  border-left: 1px solid black;
+}
+#toph{
+  background-color:blueviolet;    
+}
+#topd{
+  background-color: blue;
+  border-top: 1px solid black;
+}
+
+
+/*-----------Contact---------------*/
+label.cont-fields {
+  display: block;
+  padding: .50rem 0;
+  font-weight: bold;
+ ;
+}
+
+label.cont-fields input {
+  display: block;
+  width: 100%;
+  max-width: 96%;
+  border: 1.5px solid black;
+  padding: .50rem 0;
+}
+
+#contact div {
+  width: 75%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+/*------Contact Button--------*/
+.contactBtn {
+  margin: 1rem 0 1rem 1rem;
+  padding: .50rem;
+  background-color: blueviolet;
+  color: White;
+  font-weight: bold;
+  border: none;
+  
+}
+.contactBtn:hover {
+  background-color: Blue;
+  color: white;
+}
+

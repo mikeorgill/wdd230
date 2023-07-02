@@ -1,25 +1,38 @@
 @media only screen and (min-width: 640px) 
 {
-    header, nav, main, footer {
+    header, main, nav, footer {
         display: flex;
+        flex-flow: column wrap;
         justify-content: center;
         /* font-family: 'PT Sans', sans-serif; */
         margin: 15px auto;
         max-width: 850px;
-        font-size: 5px;
+       
     }
       
+    /* #main-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: #2196F3;
+        row-gap: 1em;
+      } */
+    
+    #main-container{        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1em;
+        column-gap: 1em;
+        
+       }
+    .hero-image{
+        grid-column: 1/2;
+        grid-row: 1;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
 
-    main{
-        
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        background-color:#FFFFFF;
-        
-    }
-      
+
     header nav{
         order: 1;
 
@@ -29,10 +42,10 @@
         align-items: center;
         justify-content: space-around;
         font-family: 'Manrope', sans-serif;
-        background-color: #118AFF;
+        background-color: #3366ff;
         color: azure;
         text-align: center;
-        border-radius: 10px;  
+        border-radius: 1rem;  
     }
 
     .header-logo{
@@ -52,14 +65,7 @@
         padding: 2px; 
 
       } 
-    /* section {
-        border-radius: 10px;
-        justify-content: space-around;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        text-align: center;
-      } */
-      
+    
       section div {
         margin: 10px;
       }
@@ -73,33 +79,60 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-end;
-               
+        background-color: transparent;         
     }
 
     nav button {display: none;} 
 
     nav ul#primaryNav {
         display: flex;
-        border-left: 1px solid rgba(0,0,0,0.3);
+        /* border-left: 1px solid rgba(0,0,0,0.3); */
     }
     
     
     
     nav ul li a {
         border: none;
-        border-right: 1px solid rgba(0,0,0,0.3);
+        color: white;
     }
 
-
+/*---------Weather---------*/
     .weather-container{
-        /* border:#333; */
-        /* max-width: 100px; */
-        /* flex-direction: column; */
-        /* justify-content: space-evenly; */
-        /* font-size:5px; */
-        /* background-color: red; */
-        /* margin: 5%; */
-        /* padding: 5px; */
+        grid-column: 2;
+        grid-row: 2;
+        background-color: white;
+        width: 1fr;
+        justify-content: center;
+        
       }
+    .weather-content{
+        width: 100%;
+        line-height: 1px;
+    }
+
+    .weather-content h3{
+        font-size: 1rem;
+    }
+
+    .weather-temp, .weather-icon, .wind-factor{
+        font-size: 1rem;
+    }
+/*--------Spotlights------*/
+    .spotlight-container{
+        grid-column: 1;
+        grid-row: 2;
+        width: 1fr;
+        background-color: #15295D;
+        border: white 6px solid;
+    }
+    .spotlight-img{
+        width: 100%;
+    }
+/*--------Table---------*/
+    table th{
+        font-size: 5px;
+        line-height: 12px;
+    }
+
     
 }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" ">
+    
+    <title>Chamber of Commerce</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=PT+Sans&family=Urbanist&display=swap" rel="stylesheet">
+    <link rel="icon" href="/chamber/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+   
+</head>
+    <body>
+        <div id="banner-top">Come to this weeks meeting Wednesday night 7:00 PM</div>
+        <header>
+            <div class="header-container">
+                <img class="header-logo" src="images/murray-logo.png" alt="Murry City Commerce">
+                <nav>
+                    <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                    <ul id="primaryNav">
+                        <li><a href='index.html'>Home</a></li> 
+                        <li><a href='discovery.html'>Discovery</a></li>
+                        <li><a href='directory.html'>Directory</a></li>
+                        <li><a href='join.html'>Join</a></li>
+                        <li><a href='contact.html'>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div id="contact">
+            <div class="form-container">
+                <div class="msg-confirmation"></div>
+                <form>
+                    <fieldset class="contact-field">
+                        <legend>Contact</legend>
+                        <label class="cont-fields">First Name: <input type="text" name="fname" required></label>
+                        <label class="cont-fields">Last Name: <input type="text" name="lname" required></label>
+                        <label class="cont-fields">Organization: <input type="text" name="organization"></label>
+                        <label class="cont-fields">Title: <input type="text" name="title" required></label>
+                        <label class="cont-fields">Phone #: <input type="tel" name="phone" placeholder="(444) 555-6666" required></label>
+                        <label class="cont-fields">Email: <input type="email" name="email" required></label>
+                        <label class="cont-fields">Message: <textarea placeholder="Type here" name="description"></textarea></label>
+                    </fieldset>
+                    <input type="submit" value="Send My Message" class="contactBtn">
+                </form>
+               
+            </div>
+        </div>
+        </main>
+        <footer> 
+            <h2>&copy;<span id='year'></span> | Mike Orgill | <span id='currentdate'></span></h2>
+            <h2>Last updated: <span id='updatedLast'></span></h2>
+        </footer>
+        <script src="scripts/commerce.js"></script>
+
+    </body>
+</html>

@@ -19,43 +19,97 @@
 </head>
     <body>
         <div id="banner-top">Come to this weeks meeting Wednesday night 7:00 PM</div>
-        <header>
-            <div class="header-container">
-                <img class="header-logo" src="images/murray-logo.png" alt="Murry City Commerce">
+        
+          
+                
+                <header>
+                <div class="header-container">
+                    <img class='header-logo' src="images/murray-logo.png" alt="Murry City Commerce">
                 <nav>
                     <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                     <ul id="primaryNav">
                         <li><a href='index.html'>Home</a></li> 
-                        <li><a href='page2.html'>page2</a></li>
+                        <li><a href='discovery.html'>Discovery</a></li>
+                        <li><a href='directory.html'>Directory</a></li>
+                        <li><a href='join.html'>Join</a></li>
+                        <li><a href='contact.html'>Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
             <main>
-                <img class="hero-image" src="images/sunset-over-saltlakecity.jpg" alt="Hero-image">
-                <!-- srcset="images/wdd230-small200px.jpg 1x, images/wdd230-meduim400px.jpg 2x, images/wdd230-large650px.jpg 3x"> -->
-            <section>
-                <div class="section-1">Section1</div>
-                <div class="section-2">Section2</div>
-                <div class="section-3">Section3</div>
-                <div class="section-4">Secton4</div>
-            </section> 
-            <div class="weather-container">
-                <p>OpenWeatherMap.org API Test</p> 
-                <div class="weatherSection">
-                  <p>Current temperature </br>Murray, Utah</br><span id="current-temp"></span> &deg;F<p>
-                  </br>
-                  <p>Current Condition Icon</p>
-                  <figure>
-                    <img src="" alt="" id="weather-icon">
-                    <figcaption></figcaption>
-                  </figure>
-                  <div class="wind-factor">
-                    <p>Wind Speed: <span id="wind-speed"></span></p></br>
-                    <p>Wind Chill: <span id="wind-chill"></span></p>
-                  </div>
-                </div>
-          </div>      
+            <div id="main-container">
+                
+                    <img class="hero-image" src="images/sunset-over-saltlakecity.jpg" alt="Hero-image">
+                    <!-- srcset="images/wdd230-small200px.jpg 1x, images/wdd230-meduim400px.jpg 2x, images/wdd230-large650px.jpg 3x"> -->
+                
+                <section class="weather-container">
+                    <div class="weather-content">
+                        <div class="weather-temp">
+                            <h3>Current temperature</h3>
+                            <span id="current-temp"></span> &deg;F
+                        </div>
+                        <div class="w-icon">
+                            <img src="" alt="" id="weather-icon">
+                            <figcaption></figcaption>
+                        </div>
+                        <div class="wind-factor"></div>
+                            <p>Wind Speed: <span id="wind-speed"></span></p>
+                            <p>Wind Chill: <span id="wind-chill"></span></p>
+                            <h3 class="weather-by">Weather by</h3>
+                            <h3 class="weather-by">OpenWeatherMap.org</h3>
+                        </div>
+                    </div>
+                </section>
+                <section class="spotlight-container">
+                    <div class="spotlight-1">
+                        <h3>
+                            <img class="spotlight-img" src="images\dollarlonecenter.png" alt="Dollor Loan Center">
+                        </h3>
+                    </div>
+                    <div class="spotlight-2">
+                        <h3>
+                            <img class="spotlight-img" src="images\hotdogonastck.png" alt="Hot Dog On A Stick">
+                        </h3>
+                    </div>
+                    <div class="spotlight-3">
+                        <h3>
+                            <img class="spotlight-img" src="images\utahremodelexperts.png" alt="Utah Remodel Experts">
+                        </h3>
+                    </div>
+                </section>
+                <section class="homepage-events">
+                    <div>
+                        <h3>Events</h3>
+                        <p>
+                            We offer a variety of events each and every month.  Whether you want networking, activities, or simply just fun.  
+                            At the Murray chamber we strive to bring our members an experience that is second to none.
+                            Click to see some of our events.
+                        </p>
+                        <div class="events-link"><a href='https://murrayareachamber.com/upcoming-evens'>Learn More</a></div>
+                    </div>
+                </section>
+                <section class="homepage-join">
+                    <div>
+                    <h3>See how we can help your buisness.</h3>
+                    </div>
+                </section>
+                <section class="homepage-news">
+                    <div>
+                        <h3>News Letter </h3>
+                        <p>
+                            Be sure to stay up to date with all of the powerful business building 
+                            events, networking opportunities, and whats happening in the community 
+                            by signing up for our weekly newsletter.
+                        </p>
+                        <div class="events-link"><a href='https://lp.constantcontactpages.com/su/NkjJEsW/newsletter?fbclid=IwAR3HyJMXHrtu3SZalgbt6ht5KoDlSecV3EsySKFtpzmP2dqDPNDHOsfugBw'>Learn More</a></div>
+                    </div>
+                </section>
+
+                
+                      
+                    
+            </div>     
         </main>
         <footer> 
             <h2>&copy;<span id='year'></span> | Mike Orgill | <span id='currentdate'></span></h2>
