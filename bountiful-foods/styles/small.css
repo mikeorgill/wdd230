@@ -1,0 +1,70 @@
+body {
+    background-color: lightgray;
+
+    min-width: 150px;
+    display:block;
+}
+
+header, nav, main, footer {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    width: 95%;
+    border-radius: 3px;
+}
+
+header, footer {
+    background-color:#142d4c ;
+    color: #ececec;
+}
+
+
+main {
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+    background-color: #ececec;
+    
+}
+
+/*---------Home Page------*/
+
+p {
+    font-size: 2rem;
+    margin: 1rem;
+}
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1;
+    grid-gap: 5px;
+}
+
+#strawb, #cherry, #kiwi {
+    justify-self: center;
+    width: 100%;
+    height: 200px;
+    grid-gap: 2px;
+
+    
+}
+#strawb {
+    grid-row: 2;
+}
+
+#cherry {
+    grid-row: 1;
+}
+
+#kiwi {
+    grid-row: 3;
+}
+
+
+
+
+
+
+
+
+
+
