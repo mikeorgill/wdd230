@@ -30,12 +30,37 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-
+    <main class="fresh-main">
+        <section class="fruit-section">
+            <h1 id="form-head">Make a Fresh Fruit Drink!</h1>
+            <p>* required fields</p>
+            <form id="fruitMixForm">
+                <label hidden>Date:<input type="date" name="date" hidden id="date"></label>
+                <div class="client-info">
+                    <label for="fname"><b>First Name*</b><input type="text" name="fname" aria-label="First Name" class="input" id='fname' required></label>                                            
+                    <label><b>Email*</b><input name="email" type="email" id="email" class="input" required></label>
+                    <label><b>Phone Number*</b><input name="phone" type="tel" id="phone" class="input" required></label>
+                </div>
+                <div id="fruit-selector" class="selector">
+                    <p><b>Please Select up to 3 fruits:</b></p>
+                </div>
+                <label class="textarea"><b>Add special requests:</b><textarea name="specialInstruc" cols="110" rows="5" id="specialInstruc" class="input"></textarea></label>   
+                <input type="button" value="Make Your Drink!" class="btn" id="Btn">
+            </form>
+            <p id="required">Please fill the required fields!</p>
+        </section>
+        <section id="fruit-output">
+            <h2>Fruit Mix Output:</h2>
+            <div id="output">
+                <p>Create a fruit drink mix to see it's nutrients.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
         <h3>&copy;<span id="year"></span> | Mike Orgill | WDD 230 | Last Updated: <span id="lastUpdated"></span></h3>
     </footer>
+    <script src="scripts/last-modified.js"></script>
+    <script src="scripts/nav-bar.js"></script>
+    <script src="scripts/fresh.js"></script>
 </body>

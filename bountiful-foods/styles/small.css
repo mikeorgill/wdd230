@@ -10,11 +10,12 @@ header, nav, main, footer {
     justify-content: center;
     margin: 0 auto;
     width: 95%;
-    border-radius: 3px;
+    border-radius: .5rem;
 }
 
 header, footer {
-    background-color:#142d4c ;
+    /* background-color:#142d4c ; */
+    background: linear-gradient(to left, #142d4c, #2F5F9C );
     color: #ececec;
 }
 
@@ -25,6 +26,74 @@ main {
     background-color: #ececec;
     
 }
+
+/*------Navigation Button-------*/
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
+    width: 3rem;
+
+}
+nav ul{
+    background-color: rgb(0, 17, 255);
+    list-style: none;
+    padding: 0;
+    margin: .5rem;
+    
+}
+
+nav ul li a{
+    display: block;
+    padding: .3rem 1vw;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: #ececec;
+
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.4);
+
+}
+
+nav a:hover{
+    background-color: pink;
+}
+
+nav button{
+    margin: 2rem auto;
+    background: #ececec;
+}
+
+nav ul {display: none;}
+
+nav ul.open {
+    display: block;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+#navBtn span:nth-child(1) {
+    display: block;
+}
+#navBtn span:nth-child(2) {
+    display: none;
+}
+
+#navBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#navBtn.open span:nth-child(2) {
+    display: block;
+}
+
+
 
 /*---------Home Page------*/
 
@@ -61,6 +130,97 @@ p {
 
 
 
+/*------Fresh Page------*/
+
+.fresh-main{
+    background-color: transparent;
+}
+.fruit-section, #fruit-output{
+    background: linear-gradient(to left, #142d4c, #2F5F9C );
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 5px rgb(253, 255, 245, .8);
+    color: #ececec;
+}
+.fruit-section h1, p{
+    text-align: center;
+}
+#output h3{
+    font-size: 25px;
+}
+#fruit-output{
+    background: linear-gradient(to left, #142d4c, #2F5F9C );
+    color: #000;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ececec;
+}
+#fruit-output p{
+    padding: 2px;
+    font-weight: 400;
+}
+#fruit-output h2{
+    padding-bottom: 5px;
+}
+#fruitMixForm  .btn{
+    width: 100%;
+    display: block;
+   float: left;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#fruitMixForm  .btn:hover{
+    color: #000;
+
+}
+.input, textarea{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 0.5px solid #006D7780;
+    padding: 10px .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+  }
+  
+  .input:focus{
+    animation: border-color ease-in-out;
+    /* border: 3px solid red; */
+    outline: none;
+    transition: .1s;
+    box-shadow: 0 0 10px 1px var(--accent1-color);
+  }
+.input:required{
+    outline: red solid 1px;
+    
+}
+.input:required:valid{
+    outline: 1px solid green;
+}
+.client-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.client-info label, .selector, .textarea{
+    width: 100%;
+    padding: 10px;
+}
+
+#required{
+    display: block;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 50px;
+    color: red;
+    background-color: white;
+    width: fit-content;
+    font-weight: bold;
+    padding: 6px;
+}
 
 
 

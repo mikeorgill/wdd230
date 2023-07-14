@@ -18,3 +18,8 @@ const modYear = mod.getFullYear();
 const modDate = `Last Updated ${modMonth} ${modDay}, ${modYear}`;
 // console.log(modDate);
 document.querySelector('#lastUpdated').innerHTML = modDate;
+
+
+/*----Copy Right Year-----*/
+const copyRight = `${curYear}`;
+document.querySelector('#year').textContent = copyRight;
