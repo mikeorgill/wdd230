@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=PT+Sans&family=Urbanist&display=swap" rel="stylesheet">
-    <link rel="icon" href="/ /favicon.ico">
+    <link rel="icon" href="/bountiful-foods/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -17,12 +17,14 @@
     
 
     <title>Bountiful Foods</title>
-   
+    
 </head>
 
 <body>
+    <style>body{background-image: url("images/limes-cut.png");}</style>
+    <div class="body-background"></div>
     <header>
-        <span id="currentDate"></span>
+        <h1 id="bountiful-header">Bountiful Foods</h1>
         <nav>
             <button id="navBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="priNav">
@@ -33,29 +35,83 @@
         </nav>
     </header>
     <main>
+        
         <div class="image-container">
-            <img id="strawb" src="images/strawberry.jpg" alt="Strawberry">
-            <img id="cherry" src="images/cherry.jpg" alt="Cherries">
-            <img id="kiwi" src="images/kiwi.jpg" alt="Kiwi's">
+                <img id="strawb" src="images/strawberry.jpg" alt="Strawberry">
+                <img id="cherry" src="images/cherry.jpg" alt="Cherries">
+                <img id="kiwi" src="images/kiwi.jpg" alt="Kiwi's">
         </div>
-        <p> 
-            Bountiful takes special orders, as well as offers special holiday menu orders which are available for 
-            pick-up or delivery. Nationwide next-day and two day shipping also available.
-        </p>
+        <div class="home-page-container">
+            <h1>
+                Bountiful Foods
+            </h1>
+            <p>
+                At Bountiful we sell fresh fruits and produce, we source our fresh fruits and produce from
+                local farms. But, we do use international suppliers for fruits and produce not grow in the area.
+            </p>
+            <h1>
+                Our Mission
+            </h1>
+            <p>
+                The mission is to provide fresh and healthy food options, including organic, made to order,
+                fruit drinks and fruit bags, to the local population and to tourists visiting the coastal 
+                areas from Los Angeles to San Diego.
 
-        <p>
-            Bountiful Foods, a locally renowned baking and catering company created by Chef/Owner Denise Assad, has been serving 
-            the SoCal community for over a decade. At Bountiful Foods, Denise’s mission is to create hearty, homemade food so her 
-            customers don’t have to.
-        </p>
-        <p>    
-            Please visit us on Saturday mornings at the Laguna Beach Farmers’ Market.
-        </p>
+            </p>
+            <h1>
+                Walk Customers
+            </h1>
+            <p>
+                We cater to walk in trafic at our storefront in Carlsbad and our food trucks.
+            </p>
+            <h1>
+                Orders
+            </h1>
+            <p>
+                We take orders over the phone or website. The orders can be delivered by the food trucks or picked up at
+                the storefront in Carlsbad. 
+            </p>
+            
+            <p id="speacial-orders"> 
+                Bountiful foods takes special orders, as well as offers special holiday menu orders which are available for 
+                pick-up or delivery. 
+            </p>
+        
+            <p id="home-p-1">
+                A locally owned market. That provides fruit and produce to the southern Califiona area. The company has been 
+                serving the local community for 8 years. Our mission is to provide fresh and healthy food options, including organic, made to order,
+                fruit drinks and fruit bags, to the local population and to tourists visiting the coastal 
+                areas from Los Angeles to San Diego.
+            </p>
+            <p id="home-p-2">    
+                Please visit us on Saturday mornings at the Laguna Beach Farmers’ Market.
+            </p>
+            <div id="temp-contianer">
+                <span id="cur-temp"></span>
+                <div class="weather-content">
+                    <div class="weather-temp">
+                        <h3>Current temperature</h3>
+                        <span id="cur-temp"></span> &deg;F
+                    </div>
+                    <div class="w-icon">
+                        <img src="" alt="" id="weather-icon">
+                    </div>
+                        <figcaption></figcaption>
+                    
+                    <div class="temp-holder">
+                        <h3 class="weather-by">Weather by</h3>
+                        <h3 class="weather-by">OpenWeatherMap.org</h3>
+                    </div> 
+                </div>
+            </div>
+        </div> 
     </main>
     
     <footer>
         <h3>&copy;<span id="year"></span> | Mike Orgill | WDD 230 | Last Updated: <span id="lastUpdated"></span></h3>
     </footer>
-    <script src="scripts/last-modified.js"></script>
+    <script src="scripts/dates.js"></script>
     <script src="scripts/nav-bar.js"></script>
+    <script src="scripts/current-temps.js"></script>
+    
 </body>

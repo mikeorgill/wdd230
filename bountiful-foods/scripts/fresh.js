@@ -104,10 +104,6 @@ function displayOutput(list = fruits){
             calories += fruit.nutritions.calories;
             sugar += fruit.nutritions.sugar;
         }
-        else{
-            // console.log("AH! whats's wrong? - 😂 ask Brother Blazzard he might have distorted the JSON file");
-            console.log('')
-        }
     });
 
     // Get all other form input values

@@ -1,23 +1,22 @@
 body {
     background-color: #99CDFF ;
     line-height: 2rem;
-    min-width: 200px;
-    padding: .5rem; 
-    display: block;
+    /* min-width: 200px; */
+    padding: .5rem;     
+  }
+#main-container{
+    display: flex;
+    flex-direction: row; 
     
   }
-/* .container{
-  display: flex;
-  flex-direction: row;
-} */
 header, nav, main, footer {
   display: flex;
   justify-content: center;
   font-family: 'Manrope', sans-serif;
   margin: 1rem auto;
   width: 90%; 
-  min-width: 250px;
-  max-width: 450%;
+  min-width: 50%;
+  max-width: 95%;
   padding: 5px;
   
 }
@@ -29,20 +28,17 @@ main{
   flex-direction: row;
   border-radius: 10px;
   background-color:#FFFFFF;
-  column-width: 200px;
+  /* column-width: 200px; */
   
 }
 
 
 header, footer { 
-  flex-direction: column;
   font-family: 'Manrope', sans-serif;
   color: black;
   text-align: center;
   line-height: 15px;
   border-radius: 10px; 
-  
-  
 }
 
 
@@ -68,13 +64,13 @@ div.section-1, div.section-2, div.section-3, div.section-4{
 
 .section-1, .section-2{
   /* justify-content: space-evenly; */
-  Max-width: 340px;
+  Max-width: 90%;
   box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.5);
 }
 
 .section1-image{
   max-width: 350px;
-  min-width: 100px;
+  /* min-width: 100px; */
   margin: 3rem;
   border-radius: 1rem;
   box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 1); 
@@ -173,22 +169,24 @@ nav ul.open {display: block;
 /*--------Weather--------*/
 .weather-container{
   display: flex;
-  max-width: 95%;
+  
+  max-height: 250px;
 }
 .weather-content{
-  max-width: 1fr;
-  max-height: 1fr;
+  width: 100%;
   align-items: center;
   text-align: center;
   font-weight: bold;
-  border-radius: 1rem;
   color: black;
-  padding: 5px;
+  border: black  1px solid;
 
    
 }
+.weather-temp{
+  margin-top: -1rem;
+}
 #current-temp{
-  margin-left: 5rem;
+  margin-left: 2rem;
   margin-bottom: 2rem;
 }
 .w-icon figcaption{
@@ -200,25 +198,48 @@ nav ul.open {display: block;
   font-size: 1rem;
 }
 .w-icon img{
-  width: 80%;
+  width: 40%;
 
 }
 .wind-factor{
-  text-align: left;
+  text-align: center;
   line-height: 4px;
-  border-top: black 1px solid;
+  /* border-top: black 1px solid; */
 }
 
 .weather-by{
   text-align: center;
   margin: 1rem;
-}
+} 
 
 /*-----Main page Spotlight-----*/
 .spotlight-container{
-  width: 40vh;
-  background-color: black;
+   justify-self: flex-end;
+  
 }
+.spotlight-img {
+  width: 100%;
+  border: black 1px solid;
+  
+}
+
+.homepage-container{
+  margin: 2rem auto;
+  flex-direction: row;
+
+}
+
+.homepage-join, .homepage-news, .homepage-events{
+  width: 1fr;
+  border: black 1px solid;
+  padding: .5rem;
+  margin-top: 4px;
+}
+
+.homepage-news{
+   flex-wrap: wrap;
+}
+
 
 
 
@@ -260,7 +281,7 @@ legend {
   padding: 5px;
   background-color: blue;
   border-radius: 1rem;
-  color: white
+  color: white;
 }
 fieldset.membership-option{
   align-items: center;
@@ -368,7 +389,8 @@ label.cont-fields {
   display: block;
   padding: .50rem 0;
   font-weight: bold;
- ;
+
+ 
 }
 
 label.cont-fields input {
