@@ -28,7 +28,6 @@ function displayResults(fruitData) {
         fruitOptionEle.textContent = fruit.name;
 
         fruitsSelectEle1.appendChild(fruitOptionEle);
-        // fruitLabelEle.appendChild(fruitsSelect1);
         });
 
         fruitData.forEach(fruit => {
@@ -41,23 +40,19 @@ function displayResults(fruitData) {
             fruitOptionEle.textContent = fruit.name;
             
             fruitsSelectEle2.appendChild(fruitOptionEle);
-            // fruitLabelEle.appendChild(fruitsSelect2);
         });
 
         fruitData.forEach(fruit => {
             fruitsSelectEle3.setAttribute('name', 'fruits');
             fruitsSelectEle3.classList.add('fruits-select');
             fruitsSelectEle3.classList.add('input');
-
             const fruitOptionEle = document.createElement('option');
             fruitOptionEle.setAttribute('value', fruit.name);
             fruitOptionEle.textContent = fruit.name;
-            
             fruitsSelectEle3.appendChild(fruitOptionEle);
-            // fruitLabelEle.appendChild(fruitsSelect3);
         });
         
-    // Document object Manipulation Section
+    
     const domFruitId = document.getElementById('fruit-selector');
 
     fruitsSelectEle1.setAttribute('id', 'fruits1');
@@ -68,7 +63,7 @@ function displayResults(fruitData) {
 
     fruitsSelectEle2.setAttribute('id', 'fruits2');
     fruitsSelectEle2.setAttribute('name', 'fruits2');
-    // fruitsSelectEle2.innerHTML = `<option value="Pick a Fruit">Pick a Fruit<option>`;
+    
     fruitLabelEle2.innerHTML = `<b>Fruit 2</b>`
     fruitLabelEle2.appendChild(fruitsSelectEle2);
     domFruitId.appendChild(fruitLabelEle2);
@@ -106,7 +101,7 @@ function displayOutput(list = fruits){
         }
     });
 
-    // Get all other form input values
+    // Form input values
     const orderDate = document.getElementById('date');
     orderDate.value = getDate();
     const oDate = orderDate.value;
@@ -115,20 +110,20 @@ function displayOutput(list = fruits){
     const phone = document.getElementById('phone').value;
     const specialInstruct = document.getElementById('specialInstruc').value;
 
-    //Create DOM Elements
+    //Create Elements
     const personInfo = document.createElement('h3'),
     nameEle = document.createElement('p'),
     emailEle = document.createElement('p'),
     phoneEle = document.createElement('p'),
     specialInstructEle = document.createElement('p'),
 
-    // Fruits Chosen
+    // Fruits picked
     choiceFruit = document.createElement('h3'),
     fruit1Ele = document.createElement('p'),
     fruit2Ele = document.createElement('p'),
     fruit3Ele = document.createElement('p'),
 
-    //fruit nutrients
+    //Nutrients
     nutrients = document.createElement('h3'),
     carbohydrateEle = document.createElement('p'),
     proteinEle = document.createElement('p'),
@@ -136,10 +131,10 @@ function displayOutput(list = fruits){
     sugarEle = document.createElement('p'),
     caloriesEle = document.createElement('p'),
    
-    // Order Date
+    //Date of Order
     dateEle = document.createElement('p'),
     
-    // Thank You message
+    // Message
     hr = document.createElement('hr')
     thanksMessage = document.createElement('p');
     
