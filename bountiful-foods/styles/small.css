@@ -117,12 +117,12 @@ p {
     
 }
 
-#home-elements{
+.home-elements{
     background-color:#ececec;
     box-shadow: 1px 1px 5px 5px rgb(253, 255, 245, .8);
     
 }
-#home-elements h1{
+.home-elements h1{
     text-align: center;
     margin-bottom: -1rem;
 }
@@ -383,6 +383,10 @@ p {
     grid-column: 1;
       
 }
+.resources-page{
+    background-color: #ececec;
+}
+
 
 
 
