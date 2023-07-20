@@ -242,8 +242,7 @@
     #owner, #partner, #employee-1, #employee-2, #employee-3{
         width: 100%;
         height: 20rem;
-        color: white;
-        max-width: 1fr;
+        color: black;
         border-radius: 10px;
         box-shadow: 1px 1px 5px 5px rgb(253, 255, 245, .8);
         background-color: #ececec;
@@ -254,7 +253,6 @@
 
     #owner-image, #partner-image, #employee-1-image, #employee-2-image, #employee-3-image{
         width: 100%;
-        max-width: 1fr;
         justify-self: center;
         
     }

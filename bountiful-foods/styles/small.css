@@ -171,7 +171,7 @@ p {
 
 .fresh-main{
     background-color: transparent;
-    width: 1fr}
+}
 .fruit-section, #fruit-output{
     background: linear-gradient(to left, #142d4c, #2F5F9C );
     margin: 0 auto;
@@ -205,7 +205,6 @@ p {
 #fruitMixForm  .btn{
     width: 50%;
     display: block;
-    float: center;
     margin: 3rem auto; 
     padding: 2rem; 
     border-radius: .5rem;
@@ -264,7 +263,7 @@ p {
     justify-content: center;
     padding: 25px;
     background-color: black;
-    width: 100;
+    width: 100%;
     
 }
 
@@ -296,7 +295,6 @@ p {
 #owner, #partner, #employee-1, #employee-2, #employee-3{
     width: 100%;
     color: white;
-    max-width: 1fr;
     margin: 10px auto;
     background-color: #a6f9a288;
     align-self: center;
@@ -307,7 +305,6 @@ p {
 
 #owner-image, #partner-image, #employee-1-image, #employee-2-image, #employee-3-image{
     width: 100%;
-    max-width: 1fr;
     justify-self: center;
     
 }
