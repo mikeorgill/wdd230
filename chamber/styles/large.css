@@ -13,14 +13,7 @@
         max-width: 1000px; 
         border-radius: 1rem;
     }
-    .homepage-container{
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        row-gap: .4em;
-        column-gap: .4em;
-        width: 100%;
-        
-    }
+    
     
     header, footer { 
         font-family: 'Manrope', sans-serif;
@@ -29,6 +22,8 @@
         border-radius: 10px; 
     } 
     
+
+
     .section-1{
         line-height: 17px;
     }
@@ -64,17 +59,36 @@
     }
 
     .weather-container{
-       grid-column: 1;
-       grid-row: 2;
-       border: white 6px solid;
-       height: 25vh;
-      }
+        /* background-color: #142d4c; */
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        justify-content: center; 
+        align-items: center;
+        /* border: 1px black solid; */
+    }
+   
+    .weather-content{
+        text-align: center;
+        background-color: #ececec;
+        border: 1px rgb(253, 255, 245, .8) solid;
+        box-shadow: 1px 1px 5px 5px rgb(253, 255, 245, .8);
+    }
 
+    .w-icon #weather-icon{
+        width: 10rem;
+    }
+    .wind-factor{
+        margin: 5px;
+        line-height: 2rem;
+
+    }
     .hero-image{
         grid-column: 2;
-        grid-row: 1;
+        grid-row: 1/3;
         border: white 6px solid;
-        width: 100%;       
+        width: 100%;
+        height: 100%;       
     }
    
     /*-----Main page Spotlight-----*/
@@ -82,7 +96,7 @@
         width: 1fr;
         background-color: #15295D;
         grid-column: 3;
-        grid-row: 1/3;
+        grid-row: 1/4;
         border: white 6px solid;
 
     }
@@ -99,6 +113,19 @@
         background-color: white;
     }
 
+    /*------Homepage--------*/
+    .homepage-container{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        row-gap: 1rem;
+        column-gap: .4em;
+        width: 100%;       
+    }
+    
+    .homepage-container p{
+        font-size: 15px;
+        margin: 0 .5rem;
+    }
     /*------Homepage Join--------*/
     .homepage-join{
         grid-column: 1;
@@ -107,17 +134,24 @@
     }
 
     /*------News------*/
-    .homepage-news{
-        grid-column: 1;
-        grid-row: 1;
-        border: white 6px solid;
+    #homepage-news{
+        grid-column: 2;
+        grid-row: 3;
+        border: 1px black solid;
+        font-size: 2rem;
+        margin: 0 auto;
     }
+    #homepage-news h3{
+        text-align: center;
+        font-size: 10px;
+    }
+    
 
     /*---------Homepage-Events-----*/
     .homepage-events{
-        grid-column: 2;
-        grid-row: 3;
-        border: white 6px solid;
+        grid-column: 1;
+        grid-row: 2;
+        /* border: white 6px solid; */
     }
 
     /*--------Directory-----*/

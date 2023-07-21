@@ -20,14 +20,13 @@ header, nav, main, footer {
   padding: 5px;
   
 }
-header, main, footer, div.banner-top{
+header, footer, div.banner-top{
   box-shadow: 2px 5px 12px 0 rgba(0, 0, 0, 0.9);
 }
 main{
   display: flex;
   flex-direction: row;
-  border-radius: 10px;
-  background-color:#FFFFFF;
+
   /* column-width: 200px; */
   
 }
@@ -38,26 +37,21 @@ header, footer {
   color: black;
   text-align: center;
   line-height: 15px;
-  border-radius: 10px; 
-}
-
-
-footer{
+  border-radius: 10px;
   font-size: 10px;
-  background-color: #118AFF;
-  
+  background-color: #118AFF; 
 }
+
 
 .hero-image{
-  max-width:95%;
-  /* padding: 10px; */
-  margin: 1rem;
-  border-radius: 1.5rem;
+  max-width:100%; 
+  box-shadow: 2px 5px 12px 0 rgba(0, 0, 0, 0.9);
 }
 div.section-1, div.section-2, div.section-3, div.section-4{
   margin: 1rem;
   /* background-color: #99CDFF; */
   max-width: 350px;
+  box-shadow: 2px 5px 12px 0 rgba(0, 0, 0, 0.9);
   
   
 }
@@ -169,8 +163,9 @@ nav ul.open {display: block;
 /*--------Weather--------*/
 .weather-container{
   display: flex;
-  
-  max-height: 250px;
+  border: 1px black solid;
+  box-shadow: 2px 5px 12px 0 rgba(0, 0, 0, 0.9);
+  /* max-height: 250px; */
 }
 .weather-content{
   width: 100%;
@@ -178,9 +173,7 @@ nav ul.open {display: block;
   text-align: center;
   font-weight: bold;
   color: black;
-  border: black  1px solid;
-
-   
+  background-color: white;
 }
 .weather-temp{
   margin-top: -1rem;
@@ -220,6 +213,7 @@ nav ul.open {display: block;
 .spotlight-img {
   width: 100%;
   border: black 1px solid;
+  box-shadow: 2px 5px 12px 0 rgba(0, 0, 0, 0.9);
   
 }
 
@@ -229,11 +223,13 @@ nav ul.open {display: block;
 
 }
 
-.homepage-join, .homepage-news, .homepage-events{
+.homepage-join, #homepage-news, .homepage-events{
   width: 1fr;
   border: black 1px solid;
   padding: .5rem;
-  margin-top: 4px;
+  margin-top: 1rem;
+  background-color: white;
+  box-shadow: 2px 5px 12px 0 rgba(0, 0, 0, 0.9);
 }
 
 .homepage-news{
@@ -242,7 +238,36 @@ nav ul.open {display: block;
 
 
 
+/*----Discovery Page------*/
+#discovery-container{
+  padding: 1rem;
+}
+#discovery-container h2{
+  text-align: center;
+}
+#discovery-container img{
+  justify-content: center;
+}
 
+
+/*----Diriectory Page----*/
+#directory-container{
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: 1fr;
+  width: 90%;
+}
+.directory-img{
+  max-width: 95%;
+  border: black 1px solid;
+  row-gap: 4em;
+}
+
+
+.directory-container div{
+  max-width: 90%;
+
+}
 
 /* -------Join Page-------- */
 

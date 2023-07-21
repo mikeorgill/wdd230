@@ -33,8 +33,8 @@ x.onclick = toggleMenu;
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const windSpeed = document.querySelector('wind-speed');
-const windChill = document.querySelector('wind-chill');
+const windSpeed = document.querySelector('#wind-speed');
+const windChill = document.querySelector('#wind-chill');
 
 const url =  'https://api.openweathermap.org/data/2.5/weather?q=Murray&units=imperial&appid=bc647adc084dd4a097a027935b756514';
 
@@ -56,12 +56,13 @@ async function apiFetch() {
 
 function  displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(1)}</strong>`;
-    // windSpeed.innerHTM = `<strong>${weatherData.wind.speed.toFixed(1)}</strong>`;
+    windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(1)}</strong>`;
     const weatherImage = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const iconDescription = weatherData.weather[0].description;
     weatherIcon.setAttribute('src', weatherImage);
     weatherIcon.setAttribute('alt', iconDescription);
     captionDesc.textContent = iconDescription;
+    
 }
 
 apiFetch();
