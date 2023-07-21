@@ -224,7 +224,6 @@ nav ul.open {display: block;
 }
 
 .homepage-join, #homepage-news, .homepage-events{
-  width: 1fr;
   border: black 1px solid;
   padding: .5rem;
   margin-top: 1rem;
@@ -367,7 +366,7 @@ form input.submitBtn:hover {
   text-align: center;
   
 }
-#membership-free{
+.membership-free{
   margin-left: 5rem;
   margin-top: -1rem;
   margin-bottom: 2rem;
