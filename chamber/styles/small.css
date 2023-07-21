@@ -248,8 +248,18 @@ nav ul.open {display: block;
 #discovery-container img{
   justify-content: center;
 }
+#discovery-container div{
+  border-radius: 2rem;
+  background-color: white;
+}
+#discovery-container p{
+  margin: 0 3rem;
+}
 
-
+#resource{
+  text-align: center;
+  
+}
 /*----Diriectory Page----*/
 #directory-container{
   display: grid;

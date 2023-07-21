@@ -112,7 +112,7 @@
     }
     #current-temp{
         justify-self: right;
-        background-color: white;
+        /* background-color: white; */
         margin-left: 4rem;
     }
 
@@ -158,6 +158,8 @@
 
 
     /*-------Discovery Page-----*/
+   
+
     #directory-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
