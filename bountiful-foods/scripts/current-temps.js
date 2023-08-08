@@ -1,5 +1,5 @@
 /* Current Temputer for Carlsbad, CA.*/
-const city = "Carlsbad";
+const city = "Murray";
 const key = "bc647adc084dd4a097a027935b756514";
 const units = "imperial";
 
